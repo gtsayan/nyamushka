@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    font-family: "Trebuchet MS";
+    border: 1px solid red;
+}
+
+body {
+    background-color: #000;
+    min-height: 100vh;
+
+}
+
+/* .wrapper {
+    background: url(img/Pattern.png) repeat;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+} */
+.header {
+    width: 460px;
+    height: 44px;
+    /* text-shadow: 0 1px 1px #000000; */
+    color: #ffffff;
+    font-family: "Exo 2.0 Thin";
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.charts {
+   
+}
+.chart-item {
+    text-align: center;  
+    
+}
+
+.chart {
+    border: 4px solid #1698d9;
+    background-color: #f2f2f2;
+    width: 320px;
+    height: 480px;
+    margin: 0 auto;
+    border-radius: 10px;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 95%, 0% 6%);
+    position: relative;
+    padding-left: 50px;
+    padding-top: 25px;
+    background-image: url(img/Photo.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    margin-bottom: 15px;
+    text-align: left;
+    
+
+}
+
+.chart::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    width: 4px;
+    height: 41px;
+    background: #1698d9;
+    transform-origin: center;
+    transform: rotate(48deg);
+}
+
+.description {
+    color: #666666;
+
+    font-size: 16px;
+
+}
+
+.vendor {
+    color: #000000;
+    margin-top: 4px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.content {
+    color: #000000;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.quantity {
+    color: #666666;
+    /* width: 40px; */
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.weight {
+width: 80px;
+height: 80px;
+border-radius:100% ;
+background-color: #2ea8e6;
+position: absolute;
+bottom: 40px;
+right: 0px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+
+}
+.weight-dig {
+    color: #ffffff;
+
+font-size: 42px;
+line-height: 22px;
+margin-top: 15px;
+}
+.kg {
+    color: #ffffff;
+    margin-top: 7px;
+
+font-size: 21px;
+line-height: 22px;
+}
+
+.buy-link {
+    color: #ffffff;
+
+font-size: 13px;
+    /* position: absolute; */
+    /* bottom: 0px; */
+}
