@@ -30,7 +30,9 @@ body {
 }
 
 .charts {
-   
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
 }
 .chart-item {
     text-align: center;  
