@@ -2,26 +2,29 @@
     font-family: "Exo2Thin";
     src: url("./fonts/Exo2Thin.eot");
     src: url("../fonts/Exo2Thin.eot?#iefix")format("embedded-opentype"),
-    url("./fonts/Exo2Thin.woff") format("woff"),
-    url("./fonts/Exo2Thin.ttf") format("truetype");
+        url("./fonts/Exo2Thin.woff") format("woff"),
+        url("./fonts/Exo2Thin.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
+
 * {
     box-sizing: border-box;
-    font-family: "Trebuchet MS";
+
     /* border: 1px solid red; */
 }
 
 body {
     /* background-color: #000; */
     min-height: 100vh;
-    
+    font-family: "Trebuchet MS";
+    background: url(img/Pattern.png) repeat;
+
 
 }
 
 .wrapper {
-    background: url(img/Pattern.png) repeat;
+
     text-align: center;
     width: 100%;
     max-width: 1280px;
@@ -31,11 +34,12 @@ body {
     padding-bottom: 65px;
     padding-top: 36px;
     margin: 0 auto;
-    
+
 }
+
 .header {
-    width: 460px;
-    height: 44px;
+    /* width: 460px;
+    height: 44px; */
     /* text-shadow: 0 1px 1px #000000; */
     color: #ffffff;
     font-family: "Exo2Thin";
@@ -45,14 +49,23 @@ body {
 }
 
 .charts {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
 }
+
+@media (max-width:1110px) {
+
+    .charts {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .chart-item {
-    text-align: center;  
-    
+    text-align: center;
+
 }
 
 .chart {
@@ -71,7 +84,7 @@ body {
     background-position: bottom left;
     margin-bottom: 15px;
     text-align: left;
-    
+
 
 }
 
@@ -116,44 +129,51 @@ body {
 }
 
 .weight {
-width: 80px;
-height: 80px;
-border-radius:100% ;
-background-color: #2ea8e6;
-position: absolute;
-bottom: 40px;
-right: 0px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #2ea8e6;
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 
 }
+
 .weight-dig {
     color: #ffffff;
 
-font-size: 42px;
-line-height: 22px;
-margin-top: 15px;
+    font-size: 42px;
+    line-height: 22px;
+    margin-top: 15px;
 }
+
 .kg {
     color: #ffffff;
     margin-top: 7px;
 
-font-size: 21px;
-line-height: 22px;
+    font-size: 21px;
+    line-height: 22px;
 }
-a{
+
+a {
     color: #22a7e9;
-    text-decoration: none; /* Убираем подчеркивание */
-    border-bottom: 1px dashed #22a7e9; /* Добавляем свою линию */ 
+    text-decoration: none;
+    /* Убираем подчеркивание */
+    border-bottom: 1px dashed #22a7e9;
+    /* Добавляем свою линию */
 }
+
 .buy-link {
     color: #ffffff;
-    
 
-font-size: 13px;
+
+    font-size: 13px;
     /* position: absolute; */
     /* bottom: 0px; */
 }
+
